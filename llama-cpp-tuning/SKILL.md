@@ -64,6 +64,12 @@ llama-server -hf <model-repo> \
 
 具体的なコマンドとテンプレートは [references/EXAMPLES.md](references/EXAMPLES.md) を参照。
 
+## ケーススタディ
+
+実際のチューニング結果を記録したケーススタディ：
+
+- [Gemma 4 26B on MacBook Pro M2 Pro](references/case-studies/gemma4-26b-m2pro.md)
+
 ## チェックリスト
 
 実行時のチェックリストは [references/CHECKLIST.md](references/CHECKLIST.md) を参照。

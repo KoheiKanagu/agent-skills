@@ -56,6 +56,8 @@ llama-bench -hf google/gemma-4-26B-A4B-it-qat-q4_0-gguf \
 
 ### コーディングエージェント基本設定
 
+※ 同じ内容の起動スクリプトは [`scripts/start-llama-server-gemma4-26b.sh`](../scripts/start-llama-server-gemma4-26b.sh) として用意している。
+
 ```bash
 llama-server -hf google/gemma-4-26B-A4B-it-qat-q4_0-gguf \
   -t 10 \
