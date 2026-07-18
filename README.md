@@ -30,10 +30,23 @@ skills/
 
 ## 導入方法
 
+### 一括 symlink (グローバル)
+
+```bash
+./install-copilot-links.sh   # ~/.copilot
+./install-grok-links.sh      # ~/.grok
+```
+
+- **Copilot**: `AGENTS.md` → `~/.copilot/copilot-instructions.md`、`skills/` を `~/.copilot/skills` にディレクトリごとリンク
+- **Grok**: `AGENTS.md` → `~/.grok/AGENTS.md`、各スキルを `~/.grok/skills/<name>` に個別リンク(既存の Grok 付属スキルを潰さない)
+
+### プロジェクト単位 / 他ツール
+
 1. `AGENTS.md` の内容をプロジェクトの `AGENTS.md` に統合する(または全文コピーして冒頭にプロジェクト固有事項を追記)。Claude Code 用には `CLAUDE.md → AGENTS.md` の symlink を張る
 2. `skills/` を各エージェントのスキルディレクトリへ symlink する:
    - Claude Code: `.claude/skills/<name> → <toolkit>/skills/<name>`
    - Codex CLI: `.codex/skills/<name>/SKILL.md → <toolkit>/skills/<name>/SKILL.md`
+   - Grok (プロジェクト限定): `.grok/skills/<name> → <toolkit>/skills/<name>`
 
 ## 導入先の AGENTS.md で定義する値
 
